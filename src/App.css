@@ -1,38 +1,138 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+html{
+	font-size: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@media screen and (max-width: 980px) {
+	html {
+		font-size: 50%;
+	}
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+  font-family: 'Merriweather', serif;
+  height: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1{
+	font-size: 4rem;
+	font-weight: bolder;
+	margin-bottom: 0;
 }
 
-.App-link {
-  color: #61dafb;
+h2{
+	font-size: 1.5rem;
+	font-weight: normal;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p{
+	font-size: 1rem;
 }
+
+.bg {
+	min-height: 100%;
+	min-width: 1024px;
+	width: 100%;
+	height: auto;
+	position: fixed;
+	top: 0;
+	left: 0;
+	opacity: 0.05;
+	user-drag: none; 
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	z-index: -1
+}
+
+.titleStyle {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.subtitleStyle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.imgButton {
+	opacity: 0.6;
+	margin-left: 15px;
+}
+
+.imgButton:hover {
+	opacity: 1;
+}
+
+.globalTracker {
+	width: 100%;
+	height: 100%;
+	margin-top: 2%;
+	line-height: 0.5rem;
+	display: flex;
+}
+
+.infoBox {
+	margin: auto;
+	width: 50%;
+	border: thin solid rgb(211,211,211);
+	background-color: rgba(245,245,245,0.3);
+}
+
+.infoHeader {
+	width: 100%;
+	height: 5rem;
+	margin-top: 2%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.selectionBox{
+	width: 50%;
+	height: 100%;
+	text-align: center;
+}
+
+.cardColumn{
+	width: 50%;
+	display: inline-block;
+}
+
+.cardRow{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.card{
+	border:0px solid #9a9b9c;
+	margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+	padding: 1rem 0rem 1rem 0rem;
+	text-align: center;
+	flex-grow: 2;
+}
+
+.card:hover{
+	background-color: rgba(255,255,255,0.3);
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.footer{
+	position: fixed;
+	left: 50%;
+	bottom: 1rem;
+	transform: translateX(-50%);
+	margin: 0 auto;
+}
+	
+	
+
